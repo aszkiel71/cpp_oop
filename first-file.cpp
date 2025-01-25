@@ -14,7 +14,7 @@ class Student{
 class Animal{
     public:
     //attributes
-    string family;
+    string species;
     string name;
     int age;
 
@@ -23,7 +23,7 @@ class Animal{
     {
         cout<<"Adding an animal"<<endl;
         cout<<"Enter family:";
-        cin >> family;
+        cin >> species;
         cout<<"Enter name:";
         cin >> name;
         cout<<"Enter age:";
@@ -33,7 +33,7 @@ class Animal{
 
     void display()
     {
-        cout<<"Family: "<<family<<endl;
+        cout<<"Family: "<<species<<endl;
         cout<<"Name: "<<name<<endl;
         cout<<"Age: "<<age<<endl;
     }
