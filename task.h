@@ -1,7 +1,7 @@
-
 #include <iostream>
 using namespace std;
-
+#ifndef TASK_H
+#define TASK_H
 class Task {
 public:
     string content;
@@ -17,3 +17,5 @@ public:
     void display_task();
     void check_answer();
 };
+
+#endif
