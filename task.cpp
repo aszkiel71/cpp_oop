@@ -2,13 +2,14 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
+#include <string>
 
 using namespace std;
 
 void Task::load() {
     fstream file;
     file.open("tasks.txt", ios::in);
-    
+
     if (!file.good()) {
         cout << "File was not found!" << endl;
         exit(1);
@@ -38,7 +39,7 @@ void Task::display_task() {
     cout << "3. " << answer3 << endl;
     cout << "4. " << answer4 << endl;
     cout << "---------------" << endl;
-    
+
     cout << "Your answer (1-4): ";
     cin >> user_answer;
     cout << endl;
